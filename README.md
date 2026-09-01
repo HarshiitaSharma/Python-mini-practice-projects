@@ -1,31 +1,15 @@
 # Python-mini-practice-projects
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <b>1. Tip Calculator</b>
-      <br><br>
-      <img src="https://github.com/user-attachments/assets/fc52a72c-0be1-4dd0-89fe-e0ce7bfa8bbd" width="100%">
-    </td>
+| Tip Calculator | Roller Coaster |
+|---|---|
+| ![Tip Calculator](<img width="645" height="160" alt="image" src="https://github.com/user-attachments/assets/60617192-ebb5-4e41-b2fc-ebaae2b8bde9" />
+) | ![Roller Coaster](<img width="535" height="162" alt="image" src="https://github.com/user-attachments/assets/1e2f54e9-1346-45d6-a238-f25eab3c369b" />
+) |
 
-    <td width="50%" align="center">
-      <b>2. Roller Coaster</b>
-      <br><br>
-      <img src="YOUR_ROLLER_COASTER_IMAGE_URL" width="100%">
-    </td>
-  </tr>
+| Project 3 | Project 4 |
+|---|---|
+| ![Project 3](./screenshots/project-3.png) | ![Project 4](./screenshots/project-4.png) |
 
-  <tr>
-    <td width="50%" align="center">
-      <b>3. Project Name</b>
-      <br><br>
-      <img src="YOUR_IMAGE_URL" width="100%">
-    </td>
-
-    <td width="50%" align="center">
-      <b>4. Project Name</b>
-      <br><br>
-      <img src="YOUR_IMAGE_URL" width="100%">
-    </td>
-  </tr>
-</table>
+| Project 5 | Project 6 |
+|---|---|
+| ![Project 5](./screenshots/project-5.png) | ![Project 6](./screenshots/project-6.png) |
