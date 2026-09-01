@@ -1,5 +1,6 @@
 #Tip calculator
-
+#The key part is:bill * (1 + tip_p)
+#If bill = 100 and tip_p = 0.10:100 × 1.10 = 110
 
 print("Welcome to the tip calculator!")
 bill = float(input("What was the total bill? $"))
