@@ -27,7 +27,7 @@ scissors = '''
 ---.__(___)
 '''
 
-choice = int(input("What do you choose(ROCK-0 PAPER-1 SCISSORS-2): "))
+choice = int(input("What do you choose(ROCK-0, PAPER-1, SCISSORS-2): "))
 
 if choice == 0:
     print(rock)
@@ -41,13 +41,18 @@ else:
 comp = random.randint(0, 2)
 
 if comp == 0:
+    print(rock)
+elif comp == 1:
+    print(paper)
+else:
+    print(scissors)
+
+if comp == 0:
     print("Computer chose Rock")
 elif comp == 1:
     print("Computer chose Paper")
 else:
     print("Computer chose Scissors")
-
-print(f"Computer chose {comp}")
 
 if choice == comp:
     print("It's a draw")
