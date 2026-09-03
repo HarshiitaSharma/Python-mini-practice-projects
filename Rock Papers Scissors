@@ -1,0 +1,59 @@
+import random
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+choice = int(input("What do you choose(ROCK-0 PAPER-1 SCISSORS-2): "))
+
+if choice == 0:
+    print(rock)
+elif choice == 1:
+    print(paper)
+elif choice == 2:
+    print(scissors)
+else:
+    print("invalid choice")
+
+comp = random.randint(0, 2)
+
+if comp == 0:
+    print("Computer chose Rock")
+elif comp == 1:
+    print("Computer chose Paper")
+else:
+    print("Computer chose Scissors")
+
+print(f"Computer chose {comp}")
+
+if choice == comp:
+    print("It's a draw")
+elif (choice == 0 and comp == 2) or \
+     (choice == 1 and comp == 0) or \
+     (choice == 2 and comp == 1):
+    print("You won")
+else:
+    print("Computer won")
