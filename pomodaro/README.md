@@ -70,3 +70,6 @@ tomato-timer/
   Supabase
 
 ## Demo:
+<img width="566" height="880" alt="image" src="https://github.com/user-attachments/assets/860bb46b-0f49-4ab8-8711-9b157dd4622f" />
+<img width="637" height="782" alt="image" src="https://github.com/user-attachments/assets/54dc1c36-f82b-443d-8c7f-7ba389d28e51" />
+
