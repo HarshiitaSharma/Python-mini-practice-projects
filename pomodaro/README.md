@@ -68,3 +68,5 @@ tomato-timer/
 - A yearly view, GitHub-style, instead of month-by-month
 - Sync the record across devices with a tiny backend or a service like
   Supabase
+
+## Demo:
