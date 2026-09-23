@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tomato. — a pomodoro timer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍅</text></svg>">
+</head>
+<body>
+
+<div class="appliance">
+
+  <header class="brand-row">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <h1>Tomato<span class="dot">.</span></h1>
+    </div>
+    <p class="tagline">a kitchen timer for your attention</p>
+  </header>
+
+  <nav class="mode-switch" role="tablist" aria-label="Timer mode">
+    <button class="mode-btn is-active" data-mode="focus" role="tab" aria-selected="true">Focus</button>
+    <button class="mode-btn" data-mode="short" role="tab" aria-selected="false">Short break</button>
+    <button class="mode-btn" data-mode="long" role="tab" aria-selected="false">Long break</button>
+  </nav>
+
+  <main class="dial-stage">
+    <svg class="dial" viewBox="0 0 240 240" aria-hidden="true">
+      <circle class="dial-track" cx="120" cy="120" r="104"></circle>
+      <circle class="dial-progress" cx="120" cy="120" r="104" pathLength="1000"></circle>
+      <circle class="dial-notch" cx="120" cy="18" r="4"></circle>
+    </svg>
+    <div class="dial-face">
+      <span class="time-remaining" id="timeDisplay">25:00</span>
+      <span class="mode-label" id="modeLabel">focus session</span>
+    </div>
+  </main>
+
+  <div class="run-controls">
+    <button class="btn btn-primary" id="startPauseBtn">Start</button>
+    <button class="btn btn-ghost" id="resetBtn">Reset</button>
+  </div>
+
+  <div class="cycle-dots" id="cycleDots" aria-label="Sessions until long break"></div>
+
+  <section class="record-panel">
+    <div class="record-head">
+      <div>
+        <h2>This month<span class="dot">.</span></h2>
+        <p class="record-count"><strong id="monthTotal">0</strong> focus sessions logged</p>
+      </div>
+      <div class="month-nav">
+        <button id="prevMonth" aria-label="Previous month">&larr;</button>
+        <span id="monthLabel">—</span>
+        <button id="nextMonth" aria-label="Next month">&rarr;</button>
+      </div>
+    </div>
+
+    <div class="weekday-row">
+      <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+    </div>
+    <div class="patch" id="patchGrid" role="img" aria-label="Monthly focus session heatmap"></div>
+
+    <div class="legend">
+      <span>fewer</span>
+      <span class="swatch s0"></span>
+      <span class="swatch s1"></span>
+      <span class="swatch s2"></span>
+      <span class="swatch s3"></span>
+      <span class="swatch s4"></span>
+      <span>more</span>
+    </div>
+  </section>
+
+  <button class="settings-toggle" id="settingsToggle" aria-expanded="false">Adjust durations</button>
+  <section class="settings-panel" id="settingsPanel" hidden>
+    <label>
+      Focus (minutes)
+      <input type="number" id="focusInput" min="1" max="90" value="25">
+    </label>
+    <label>
+      Short break (minutes)
+      <input type="number" id="shortInput" min="1" max="30" value="5">
+    </label>
+    <label>
+      Long break (minutes)
+      <input type="number" id="longInput" min="1" max="60" value="15">
+    </label>
+    <label>
+      Sessions before long break
+      <input type="number" id="cycleInput" min="2" max="8" value="4">
+    </label>
+    <button class="btn btn-ghost" id="saveSettings">Save</button>
+  </section>
+
+  <p class="footnote">Runs entirely in this browser tab — your record is saved on this device only.</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
